@@ -49,6 +49,40 @@ window.onload = function(){
         hey.innerHTML = "<i class='fas fa-skull-crossbones danger'></i> Obese <i class='fas fa-skull-crossbones danger'></i>";
         hey.style.color = "firebrick";
       }
-
     });
+
+    // Adding logic when the second button in clicked
+    buttonTwo.addEventListener("click", function(e){
+
+      e.preventDefault;
+
+      var m = Math.round(usWeight.value / 2.2046);
+      var z = Math.round(usHeightFt.value / 0.032808);
+      var q = Math.round(usHeightIn.value / 0.39370);
+
+      var ha = m / ((z + q) * (z + q)) * 10000;
+
+      if(usWeight.value === "" || usHeightFt.value === "" || usHeightIn.value === ""){
+        x.textContent = "Please input something";
+      } else{
+        var yi = ha.toFixed(2);
+        if(yi < 18.49){
+          x.textContent = "Your BMI: " + yi;
+          t.innerHTML = "<i class='fas fa-bell danger'></i> Underweight <i class='fas fa-bell danger'></i>";
+          t.style.color = "firebrick";
+      } else if(yi >= 18.50 && yi < 24.99){
+          x.textContent = "Your BMI: " + yi;
+          t.innerHTML = "<i class='fas fa-check success'></i> Normal weight <i class='fas fa-check success'></i>";
+          t.style.color = "darkgreen";
+      } else if(yi >= 25.00 && yi < 29.99){
+          x.textContent = "Your BMI: " + yi;
+          t.innerHTML = "<i class='fas fa-bell danger'></i> Overweight <i class='fas fa-bell danger'></i>";
+          t.style.color = "firebrick";
+      } else{
+          x.textContent = "Your BMI: " + yi;
+          t.innerHTML = "<i class='fas fa-skull-crossbones danger'></i> Obese <i class='fas fa-skull-crossbones danger'></i>";
+          t.style.color = "firebrick";
+      }
+    }
+  });
 }
