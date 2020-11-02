@@ -85,4 +85,13 @@ window.onload = function(){
       }
     }
   });
+
+  // Including jQuery
+  $("#european").click(function(){
+        $("#euro-ms").slideToggle("slow");
+    });
+
+    $("#american").click(function(){
+        $("#amer-ms").slideToggle("slow");
+  });
 }
