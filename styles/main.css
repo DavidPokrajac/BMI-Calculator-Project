@@ -1,0 +1,126 @@
+*{
+    font-family: 'Source Serif Pro', serif;
+}
+
+:root{
+    --primary-color: lightpink;
+    --secondary-color: palevioletred;
+    --main-align: center;
+    --font-wght: bold;
+    --f-size-one: 1.5em;
+    --f-size-two: 1.3em;
+    --f-size-three: 1.2em;
+    --f-size-four: 1.1em;
+}
+
+/* Hiding default arrows appearing in input type number tag */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+/* Styling the body */
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+h2, h4{
+    text-align: var(--main-align);
+}
+
+#european p, #american p{
+    border: 1px solid var(--secondary-color);
+    text-align: var(--main-align);
+    font-size: var(--f-size-one);
+    margin: 0.5em auto;
+    font-style: italic;
+}
+
+#european, #american{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#euro-ms p{ margin: 1em; }
+
+#amer-ms p{ margin: 1em; }
+
+p{ text-align: var(--main-align); }
+
+#euro-ms, #amer-ms{ display: none; }
+
+input[type="number"]{
+    font-size: var(--f-size-three);
+    padding: 0.2em;
+    width: 7em;
+    margin: 0 1em;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    text-align: var(--main-align);
+}
+
+input[type="button"]{
+    display: block;
+    margin: 0.7em auto;
+    font-size: var(--f-size-four);
+    padding: 0.5em;
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+#hi, #hey, #x, #t{
+    font-size: var(--f-size-three);
+    text-align: var(--main-align);
+}
+
+.danger{
+    display: inline-block;
+    color: firebrick;
+    font-size: var(--f-size-one);
+    margin: 0 0.3em;
+}
+
+.success{
+    display: inline-block;
+    color: darkgreen;
+    font-size: var(--f-size-one);
+    margin: 0 0.3em;
+}
+
+#european:hover, #american:hover{
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: background-color 0.5s, color 0.7s;
+}
+
+input[type="button"]:hover{
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: background-color 0.5s, color 0.7s;
+}
+
+.guide-group p:first-of-type{ font-weight: var(--font-wght); }
+
+#hi{ font-weight: var(--font-wght); }
+
+#x{ font-weight: var(--font-wght); }
