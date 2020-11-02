@@ -1,0 +1,53 @@
+@media screen and (max-width: 800px){
+    #european p{
+        font-size: 1.3em;
+    }
+    #american p{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #euro-ms p{
+        font-size: 1em;
+    }
+    #amer-ms p{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #european, #american{
+        width: 90%;
+    }
+    #euro-ms #hey{
+        font-size: 1.5em;
+    }
+    #euro-ms #hi{
+        font-size: 1.2em;
+    }
+    #amer-ms #t{
+        font-size: 1.5em;
+    }
+    #amer-ms #x{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #european, #american{
+        width: 90%;
+    }
+    #euro-ms #hey{
+        font-size: 1.5em;
+    }
+    #euro-ms #hi{
+        font-size: 1.2em;
+    }
+    #amer-ms #t{
+        font-size: 1.5em;
+    }
+    #amer-ms #x{
+        font-size: 1.2em;
+    }
+}
